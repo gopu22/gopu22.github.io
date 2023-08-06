@@ -33,6 +33,10 @@ jobs:
       - name: Update Parcel using npm
         run: npm install parcel@latest --save-dev
 
+      # Run the application!
+      - name: Run the application
+        run: npm start
+
       # Build project
       - name: Build project
         run: npm run-script build
