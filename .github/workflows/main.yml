@@ -37,9 +37,9 @@ jobs:
       - name: Updating Browserlist DB
         run: npx update-browserslist-db@latest
 
-      # Run the application!
-      - name: Run the application
-        run: npm start
+      # # Run the application!
+      # - name: Run the application
+      #   run: npm start
 
       # Build project
       - name: Build project
