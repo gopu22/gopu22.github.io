@@ -29,6 +29,10 @@ jobs:
       - name: Install project
         run: npm install
 
+      # Update Parcel
+      - name: Update Parcel using npm
+        run: npm install parcel@latest --save-dev
+
       # Build project
       - name: Build project
         run: npm run-script build
