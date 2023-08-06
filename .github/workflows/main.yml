@@ -33,6 +33,10 @@ jobs:
       - name: Update Parcel using npm
         run: npm install parcel@latest --save-dev
 
+      # Update Browser
+      - name: Updating Browserlist DB
+        run: npx update-browserslist-db@latest
+
       # Run the application!
       - name: Run the application
         run: npm start
